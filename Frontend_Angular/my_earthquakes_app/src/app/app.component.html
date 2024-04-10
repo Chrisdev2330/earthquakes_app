@@ -1,0 +1,45 @@
+<div class="container py-5">
+  <h1 class="mb-5 text-center">Features</h1>
+  <form (ngSubmit)="getFeatures()" class="mb-5">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <label for="magType" class="form-label">Mag Type</label>
+        <input type="text" class="form-control" id="magType" [(ngModel)]="magType" name="magType">
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="perPage" class="form-label">Per Page</label>
+        <input type="number" class="form-control" id="perPage" [(ngModel)]="perPage" name="perPage">
+      </div>
+      <div class="col-md-4 mb-3 d-flex align-items-end">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
+  <div class="row row-cols-1 row-cols-md-3 g-4" *ngFor="let feature of features">
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">{{ feature.attributes.title }}</h5>
+          <p class="card-text">{{ feature.attributes.place }}</p>
+          <div *ngFor="let comment of feature.comments">
+            <p class="text-muted"><small>{{ comment.body }}</small></p>
+          </div>
+          <form (ngSubmit)="createComment(feature)">
+            <div class="mb-3">
+              <label for="commentBody" class="form-label">New Comment</label>
+              <input type="text" class="form-control" id="commentBody" [(ngModel)]="feature.newComment" name="commentBody">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Comment</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav aria-label="Page navigation example" class="mt-5">
+    <ul class="pagination justify-content-center">
+      <li class="page-item"><a class="page-link" href="#" (click)="prevPage()">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">{{ page }}</a></li>
+      <li class="page-item"><a class="page-link" href="#" (click)="nextPage()">Next</a></li>
+    </ul>
+  </nav>
+</div>
