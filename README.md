@@ -29,8 +29,9 @@ rails s
 
 ## Getting Started frontend
 1. git clone https://github.com/Chrisdev2330/earthquakes_app 
-2. cd Frontend_Angular/my_earthquakes_app - cd Frontend_Vainillajs 
+2. cd Frontend_Angular/my_earthquakes_app
 3. npm i
+4. para javascript cd Frontend_Vainillajs 
 
 ## Running the Application frontend
 1. ng serve para angular
