@@ -1,4 +1,4 @@
-# earthquakes_app
+# Earthquakes_app
 Aplicación en Ruby on rails  framework api que obtiene  y entrega información relacionada con datos sismológicos en el mundo. A grandes rasgos se contempla una Task para obtener y persistir datos y dos endpoints que serán consultados en una aplicación angular y vanilla js. 
 La data Puede  ser filtrada por:
 1. mag_type Valores posibles: md, ml, ms, mw, me, mi, mb, mlg.
@@ -16,7 +16,7 @@ La data Puede  ser filtrada por:
 
 5. Posgresql v 14.11
 
-## Gemas utilizadas
+## Gems
 1. rack-cors
 2. httparty
 3. json
