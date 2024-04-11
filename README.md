@@ -28,14 +28,14 @@ La data Puede  ser filtrada por:
 rails s
 
 ## Getting Started frontend
-git clone https://github.com/Chrisdev2330/earthquakes_app
-cd Frontend_Angular/my_earthquakes_app
-npm i
-para javascript cd Frontend_Vainillajs 
+1. git clone https://github.com/Chrisdev2330/earthquakes_app - cd Frontend_Vainillajs 
+2. cd Frontend_Angular/my_earthquakes_app
+3. npm i
 
 ## Running the Application frontend
-*ng serve
-abrir index.html
+1. ng serve para angular
+2. Abrir index.html para javascript
+
 
 
 
