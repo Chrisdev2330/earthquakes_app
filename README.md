@@ -15,6 +15,13 @@ La data Puede  ser filtrada por:
 4. Rails v7.1.3.2 
 
 5. Posgresql v 14.11
+
+## Gemas utilizadas
+1. rack-cors
+2. httparty
+3. json
+4. kaminari
+
    
 ## Getting Started backend
 1. git clone https://github.com/Chrisdev2330/earthquakes_app
