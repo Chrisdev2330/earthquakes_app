@@ -34,7 +34,7 @@ npm i
 para javascript cd Frontend_Vainillajs 
 
 ## Running the Application frontend
-ng serve
+*ng serve
 abrir index.html
 
 
